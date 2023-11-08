@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer
 {
-    internal class OrderStatus
+    public enum OrderStatus
     {
+        New = 0,
+        InProgress = 1,
+        Sent = 2,
+        Customs = 3,
+        Completed = 4
     }
 }
